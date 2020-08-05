@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browserName" value="Chrome"/>
+  <listeners>
+    <listener class-name="com.ext.utility.Listener"/>
+  </listeners>
+  <test name="Test- Chrome">
+    <classes>
+      <class name="com.ext.testCases.BaseTestCase"/>
+      <class name="com.ext.testCases.TC_Login"/>
+    </classes>
+  </test> <!-- Test- Chrome -->
+  <test name="Test- Chrome(failed)" parallel="tests">
+    <classes>
+      <class name="com.ext.testCases.BaseTestCase">
+        <methods>
+          <include name="prerequite"/>
+        </methods>
+      </class> <!-- com.ext.testCases.BaseTestCase -->
+      <class name="com.ext.testCases.TC_Login">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="TC_Login1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ext.testCases.TC_Login -->
+    </classes>
+  </test> <!-- Test- Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

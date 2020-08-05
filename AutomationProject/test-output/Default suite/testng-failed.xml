@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="com.ext.actions.Practice_Action"/>
+      <class name="com.ext.utility.BaseClass"/>
+      <class name="com.ext.utility.Utils"/>
+      <class name="com.ext.utility.Constant"/>
+      <class name="com.ext.pageObjects.Practice"/>
+      <class name="com.ext.testCases.TC_Login"/>
+      <class name="com.ext.actions.Widgets_Action"/>
+      <class name="com.ext.utility.Log"/>
+      <class name="com.ext.utility.Listener"/>
+      <class name="com.ext.actions.Login_Action"/>
+      <class name="com.ext.pageObjects.Login_Page"/>
+      <class name="com.ext.testCases.TC_Practice"/>
+      <class name="com.ext.testCases.VerifyTitle"/>
+      <class name="com.ext.testCases.TC_Register"/>
+      <class name="com.ext.testCases.BaseTestCase"/>
+      <class name="com.ext.utility.ExcelUtils"/>
+      <class name="com.ext.pageObjects.Widgets"/>
+      <class name="com.ext.actions.Register_Action"/>
+      <class name="com.ext.pageObjects.Register_Page"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.ext.testCases.BaseTestCase">
+        <methods>
+          <include name="verifyTitle"/>
+        </methods>
+      </class> <!-- com.ext.testCases.BaseTestCase -->
+      <class name="com.ext.testCases.VerifyTitle">
+        <methods>
+          <include name="verifyBlogTitle"/>
+        </methods>
+      </class> <!-- com.ext.testCases.VerifyTitle -->
+      <class name="com.ext.testCases.TC_Register">
+        <methods>
+          <include name="TC1_Register"/>
+          <include name="verifyTitle"/>
+        </methods>
+      </class> <!-- com.ext.testCases.TC_Register -->
+      <class name="com.ext.testCases.TC_Practice">
+        <methods>
+          <include name="TC_Widgets"/>
+        </methods>
+      </class> <!-- com.ext.testCases.TC_Practice -->
+      <class name="com.ext.testCases.TC_Login">
+        <methods>
+          <include name="verifyTitle"/>
+          <include name="TC_Login1"/>
+        </methods>
+      </class> <!-- com.ext.testCases.TC_Login -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
