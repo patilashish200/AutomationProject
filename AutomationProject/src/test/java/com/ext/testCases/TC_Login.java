@@ -52,7 +52,7 @@ public int iTestCaserow;
 @Test(testName="TestCaseName is TC_Login1")
 public void  TC_Login1()
 {
-	System.out.println("This is test case1 syso1");
+	System.out.println("This is test case1 syso2");
 	logger = report.startTest("TC_Login1");
 /*	logger = report.startTest("TC_Login1");
 	
