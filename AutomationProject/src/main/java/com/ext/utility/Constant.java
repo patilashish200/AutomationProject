@@ -3,7 +3,7 @@ package com.ext.utility;
 public class Constant {
  # This is a constant class
 #the below change is from locala   repo
-public final static int col_TCname=12000;
+public final static int col_TCname=13000;
 	public final static int col_TCname_01=12001;
 	public final static int col_TCname=50;
 	public final static int col_TCname=0;
