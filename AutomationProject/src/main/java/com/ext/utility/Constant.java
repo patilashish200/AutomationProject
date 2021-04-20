@@ -2,9 +2,9 @@ package com.ext.utility;
 
 public class Constant {
  # This is a constant class
-	 public final static int col_TCname=4000;
-	public final static int col_TCname=500;
-	 public final static int col_TCname=50;
+#the below change is from locala   repo
+public final static int col_TCname=800;
+	public final static int col_TCname=50;
 	public final static int col_TCname=0;
 	
 	public final static int col_TCnameval=1;
